@@ -1,0 +1,32 @@
+.what-we-do {
+  padding-top: 0;
+}
+
+.what-we-do__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.what-we-do__item-wrapper {
+  position: relative;
+}
+.what-we-do__desc {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 16px;
+
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
