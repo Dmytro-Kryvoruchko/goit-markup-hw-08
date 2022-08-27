@@ -34,6 +34,12 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open" type="button" .js-open-menu>
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+
         <ul class="contacts list-no-style">
           <li class="contacts__item">
             <a class="contacts__link link-line" href="mailto:info@example.com"
@@ -53,6 +59,21 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu-bar" .js-menu-container>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu-bar__close-btn" .js-close-menu>
+            <svg class="mobile-menu-bar__close-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="list-no-style link">
+            <li class="link"><a href="">link-1</a></li>
+            <li><a href="">link-2</a></li>
+            <li><a href="">link-3</a></li>
+            <li><a href="">link-4</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -555,5 +576,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
