@@ -3,8 +3,7 @@
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-section/hero-bg.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -44,3 +43,318 @@
     background-color: var(--hover-focus-color);
   }
 }
+
+// .hero {
+//   background-color: #2f303a;
+//   height: 400px;
+//   width: 100%;
+//   padding: 118px 0;
+//   text-align: center;
+//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(/./images/hero-section/hero-bg-mob@1x.jpg);
+//   background-size: cover;
+// }
+
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//   screen and (min-resolution: 192dpi) and (max-width: 767px),
+//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//   .hero {
+//     text-align: center;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../image/mobile-img/Hero2x.jpg);
+//     background-color: #c4c4c4;
+//   }
+
+//   .hero-title {
+//     font-family: 'Roboto';
+//     font-style: normal;
+//     color: var(--white-color);
+//     max-width: 693px;
+//     margin-bottom: 30px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     letter-spacing: 0.06em;
+//   }
+
+// .order-btn {
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+//   padding-left: 32px;
+//   padding-right: 32px;
+//   font-family: 'Roboto', sans-serif;
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.87;
+//   letter-spacing: 0.06em;
+//   color: var(--white-color);
+//   background: var(--main-color);
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+//   border-color: transparent;
+
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../image/img-tablet/Hero.jpg);
+//   }
+// }
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//   screen and (min-resolution: 192dpi) and (min-width: 768px),
+//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//   .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../image/img-tablet/Hero2x.jpg);
+//   }
+
+//   .hero-side {
+//     font-family: 'Roboto';
+//     font-style: normal;
+//     font-weight: 900;
+//     font-size: 26px;
+//     line-height: 42px;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     max-width: 360px;
+//     color: var(--white-color);
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-bottom: 30px;
+//   }
+
+//   .modal-btn {
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     padding-left: 32px;
+//     padding-right: 32px;
+//     font-family: 'Roboto', sans-serif;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
+//     letter-spacing: 0.06em;
+//     color: var(--white-color);
+//     background: var(--main-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border-color: transparent;
+
+//     &:hover {
+//       cursor: pointer;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../image/desktop/Hero.jpg);
+//     height: 600px;
+//     padding: 200px 0;
+//   }
+
+//   .hero-side {
+//     max-width: 693px;
+//   }
+// }
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//   screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//   .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../image/desktop/Hero2x.jpg);
+//     height: 600px;
+//     padding: 200px 0;
+//   }
+
+//   .hero-side {
+//     font-family: 'Roboto';
+//     font-style: normal;
+//     padding-bottom: 35px;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: var(--white-color);
+//     max-width: 696px;
+//   }
+
+//   .modal-btn {
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     padding-left: 32px;
+//     padding-right: 32px;
+//     font-family: 'Roboto', sans-serif;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
+//     letter-spacing: 0.06em;
+//     color: var(--white-color);
+//     background: var(--main-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border-color: transparent;
+
+//     &:hover {
+//       cursor: pointer;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 767px) {
+//   .plus {
+//     padding: 60px 0;
+//   }
+
+//   .plus-item:not(:last-child) {
+//     padding-bottom: 30px;
+//   }
+
+//   .plus-item-wrapper {
+//     background-color: var(--top-color);
+//     width: 450px;
+//     height: 120px;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .plus-symbol {
+//     width: 70px;
+//     height: 70px;
+//   }
+
+//   .plus-title {
+//     margin-bottom: 10px;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--accent-color);
+//   }
+
+//   .plus-text {
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 24px;
+//     letter-spacing: 0.03em;
+//     max-width: 450px;
+//     color: var(--secondary-color);
+//   }
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .plus {
+//     padding: 60px 0;
+//   }
+
+//   .plus-list {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     gap: 30px;
+//   }
+
+//   .plus-item-wrapper {
+//     background-color: var(--top-color);
+//     width: 354px;
+//     height: 120px;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .plus-symbol {
+//     width: 70px;
+//     height: 70px;
+//   }
+
+//   .plus-title {
+//     margin-bottom: 10px;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--accent-color);
+//   }
+
+//   .plus-text {
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 24px;
+//     letter-spacing: 0.03em;
+//     max-width: 354px;
+//     color: var(--secondary-color);
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .plus {
+//     padding: 94px 0;
+//   }
+
+//   .plus-list {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//   }
+
+//   .plus-item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+
+//   .plus-item-wrapper {
+//     background-color: var(--top-color);
+//     width: 270px;
+//     height: 120px;
+//     border-radius: 4px;
+//     margin-bottom: 25px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .plus-symbol {
+//     width: 70px;
+//     height: 70px;
+//   }
+
+//   .plus-title {
+//     margin-bottom: 10px;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--accent-color);
+//   }
+
+//   .plus-text {
+//     width: 270px;
+//     color: var(--secondary-color);
+//   }
+// }
