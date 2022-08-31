@@ -2,18 +2,17 @@
   background-color: var(--secondary-back-color);
 }
 
-.team-profile {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .team-profile__card {
-  // width: 270px;
+  width: 450px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.card__photo {
+  border-radius: 0px;
+  width: 100%;
 }
 
 .card__name {
@@ -70,36 +69,31 @@
   fill: currentColor;
 }
 
-.media-icons {
-  fill: #afb1b8;
-  transition: fill var(--transition-dur-and-fun);
-
-  .icon:hover &,
-  .icon:focus & {
-    fill: #ffffff;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .employees-item:not(:last-child) {
+  .team-profile__card:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .menu {
+  .team-profile {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-
-  .employees-item {
+  .team-profile__card {
     margin-bottom: 0;
+    width: 354px;
   }
 }
-
 @media screen and (min-width: 1200px) {
-  .employees-item {
+  .team-profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team-profile__card {
     margin-bottom: 0;
+    width: 270px;
   }
 }
