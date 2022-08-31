@@ -1328,21 +1328,9 @@ button {
 }
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   background: var(--primary-back-color);
-}
-
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 100%;
 }
 
 .logo-footer {
@@ -1353,18 +1341,6 @@ button {
   line-height: 1.19;
   letter-spacing: inherit;
   color: var(--primary-white-color);
-}
-
-.address-container {
-  margin-right: 70px;
-}
-
-.address {
-  margin-top: 20px;
-}
-
-.contacts-items + .contacts-items {
-  margin-top: 9px;
 }
 
 .address-footer-link {
@@ -1386,32 +1362,6 @@ button {
 }
 .contacts-footer-link:hover, .contacts-footer-link:focus {
   color: var(--accent-color);
-}
-
-.find-us-menu {
-  margin-right: auto;
-}
-
-.find-us-title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: inherit;
-  line-height: 1.14;
-  letter-spacing: inherit;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-}
-
-.social-list-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .social-list-link-footer {
@@ -1446,21 +1396,40 @@ button {
   color: var(--primary-white-color);
 }
 
-.subscribe-section-wrapper {
+.find-us-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.social-list-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
 }
 
 .footer-subscribe-input {
-  margin-right: 12px;
+  margin-bottom: 20px;
   background-color: transparent;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  min-width: 358px;
-  height: 50px;
   border-radius: 4px;
   color: var(--primary-white-color);
   -webkit-transition: border-color var(--transition);
@@ -1507,4 +1476,63 @@ button {
 
 .subscribe-btn {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .address-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 60px;
+  }
+  .footer-subscribe-input {
+    width: 450px;
+    height: 50px;
+  }
+  .find-us-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .address {
+    text-align: center;
+  }
+  .subscribe-footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
