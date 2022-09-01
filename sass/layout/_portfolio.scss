@@ -24,156 +24,10 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .portfolio-filter {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    gap: 8px;
-  }
-
-  //   .filter-menu + .filter-menu {
-  //     margin-left: 8px;
-  //  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio-filter {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .filter-menu + .filter-menu {
-    margin-left: 8px;
-  }
-
-  // .portfolio__item {
-  //   flex-basis: calc((100% - 1 * 30px) / 2);
-  // }
-
-  // .portfolio__link {
-  //   display: flex;
-  //   flex-direction: column;
-  //   height: 100%;
-  // }
-
-  // .project-box {
-  //   flex-grow: 1;
-  // }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio-filter {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  // .portfolio__item {
-  //   flex-basis: calc((100% - 1 * 30px) / 2);
-  // }
-
-  // .portfolio__link {
-  //   display: flex;
-  //   flex-direction: column;
-  //   height: 100%;
-  // }
-
-  // .project-box {
-  //   flex-grow: 1;
-  // }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio-filter {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-
-  .filter-menu + .filter-menu {
-    margin-left: 8px;
-  }
-}
-
-// PORTFOLIO
-.project-box__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-  color: #212121;
-}
-
-.project-box__type {
-  font-size: 16px;
-  line-height: 1.88;
-  color: #757575;
-}
-
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.portfolio-gallery {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-gallery__desc {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  transform: translate(0, 100%);
-  transition: transform var(--transition-dur-and-fun);
-
-  background: rgba(33, 150, 243, 0.9);
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  color: #ffffff;
-  padding: 63px 24px;
-
-  .portfolio__link:hover &,
-  .portfolio__link:focus & {
-    transform: translate(0, 0);
-  }
-}
-
-.portfolio-gallery__cards {
-  flex-basis: calc((100% - 60px) / 3);
-  display: block;
-}
-
-.project-box {
-  padding: 20px 24px;
-  background: #ffffff;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.portfolio__link {
-  transition: box-shadow var(--transition-dur-and-fun);
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-}
-// /PORTFOLIO
-
 .portfolio-catalog {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -245,4 +99,70 @@
   color: var(--paragraph-text-color);
 }
 
-// PORTFOLIO FILTER
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-filter {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .filter-menu + .filter-menu {
+    margin-left: 8px;
+  }
+
+  .portfolio-card {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+
+  .portfolio-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .portfolio-card-desc {
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-filter {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .portfolio-card {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+
+  .portfolio-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .portfolio-card-desc {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .filter-menu + .filter-menu {
+    margin-left: 8px;
+  }
+}
