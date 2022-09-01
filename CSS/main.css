@@ -1111,6 +1111,9 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+  .team-profile__card {
+    width: 100%;
+  }
   .team-profile__card:not(:last-child) {
     margin-bottom: 30px;
   }
