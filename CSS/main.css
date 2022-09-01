@@ -1330,7 +1330,6 @@ button {
 .footer {
   padding: 60px 0;
   background: var(--primary-back-color);
-  width: 100%;
 }
 
 .logo-footer {
@@ -1394,6 +1393,7 @@ button {
   letter-spacing: inherit;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  text-align: center;
 }
 
 .find-us-title {
@@ -1425,6 +1425,7 @@ button {
 
 .footer-subscribe-input {
   margin-bottom: 20px;
+  height: 50px;
   background-color: transparent;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1479,17 +1480,6 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .address-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1505,7 +1495,6 @@ button {
   }
   .footer-subscribe-input {
     width: 450px;
-    height: 50px;
   }
   .find-us-menu {
     display: -webkit-box;
@@ -1530,9 +1519,23 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
+  }
+  .subscribe-section-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
