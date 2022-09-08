@@ -2,13 +2,6 @@
   align-items: stretch;
 }
 
-.features__item {
-  display: flex;
-  flex-direction: column;
-  width: 270px;
-  text-align: left;
-}
-
 .features__container {
   display: flex;
   height: 120px;
@@ -51,8 +44,8 @@
   .features__item {
     width: 100%;
   }
-  .features__desc {
-    margin-bottom: 30px;
+  .features__item + .features__item {
+    margin-top: 30px;
   }
 }
 
@@ -62,7 +55,11 @@
     flex-wrap: wrap;
     gap: 30px;
   }
+
   .features__item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     flex-basis: calc((100% - 30px) / 2);
   }
 }

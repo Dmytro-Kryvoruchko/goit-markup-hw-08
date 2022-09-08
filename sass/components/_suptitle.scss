@@ -7,3 +7,9 @@
   letter-spacing: inherit;
   color: var(--title-text-color);
 }
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .suptitle {
+    font-size: 28px;
+  }
+}
