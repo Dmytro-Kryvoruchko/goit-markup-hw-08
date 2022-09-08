@@ -599,6 +599,9 @@ button {
     padding: 0;
     line-height: 0;
   }
+  .current {
+    color: var(--accent-color);
+  }
   .mobile-menu-open {
     background-color: transparent;
     border: none;
