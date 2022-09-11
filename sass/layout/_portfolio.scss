@@ -95,13 +95,16 @@
   color: var(--paragraph-text-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .portfolio-filter {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
     gap: 8px;
     row-gap: 15px;
+  }
+  .portfolio-catalog {
+    min-width: 480px;
   }
 }
 

@@ -622,6 +622,7 @@ button {
   }
   .page-header {
     border-bottom: 1px solid var(--primary-border-color);
+    min-width: 480px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -1335,7 +1336,7 @@ button {
   color: var(--paragraph-text-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .portfolio-filter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1345,6 +1346,9 @@ button {
     margin-bottom: 40px;
     gap: 8px;
     row-gap: 15px;
+  }
+  .portfolio-catalog {
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
