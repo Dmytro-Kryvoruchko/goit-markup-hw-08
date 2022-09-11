@@ -151,6 +151,13 @@
   .portfolio-card-desc {
     flex-grow: 1;
   }
+
+  .portfolio-catalog {
+    // display: flex;
+    // flex-wrap: wrap;
+    justify-content: left;
+    // gap: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

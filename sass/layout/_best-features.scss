@@ -1,8 +1,4 @@
-.features {
-  align-items: stretch;
-}
-
-.features__container {
+.features__wrap {
   display: flex;
   height: 120px;
   justify-content: center;
@@ -42,7 +38,7 @@
   }
 
   .features__item {
-    width: 100%;
+    width: 450px;
   }
   .features__item + .features__item {
     margin-top: 30px;
@@ -60,6 +56,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 354px;
     flex-basis: calc((100% - 30px) / 2);
   }
 }

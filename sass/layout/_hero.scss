@@ -1,8 +1,6 @@
 .hero {
   margin-top: 0px;
   text-align: center;
-
-  // padding: 200px 0;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -19,6 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .content-title-advantages {
   padding-bottom: 10px;
@@ -64,7 +63,8 @@
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 192dppx) and (max-width: 767px) {
   .hero {
-    background-image: url('../images/hero-section/hero-bg-mob@2x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg-mob@2x.jpg');
     min-width: 480px;
     height: 400px;
     padding: 118px 0;
@@ -73,7 +73,8 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url('../images/hero-section/hero-bg-tab@1x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg-tab@1x.jpg');
     padding: 118px 0;
   }
 }
@@ -81,17 +82,23 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 192dppx) and (min-width: 768px) {
-  .hero {
-    background-image: url('../images/hero-section/hero-bg-tab@2x.jpg');
-    padding: 118px 0;
-  }
+  // .hero {
+  //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url('../images/hero-section/hero-bg-tab@2x.jpg');
+  // }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url('../images/hero-section/hero-bg-desk@1x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg-desk@1x.jpg');
     padding-top: 200px;
     padding-bottom: 200px;
+    min-width: 600px;
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -99,10 +106,11 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 192dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url('../images/hero-section/hero-bg-desk@2x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg-desk@2x.jpg');
   }
-  .hero-title {
-    font-size: 44px;
-    line-height: 1.36;
-  }
+  // .hero-title {
+  //   font-size: 44px;
+  //   line-height: 1.36;
+  // }
 }

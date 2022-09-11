@@ -1,7 +1,7 @@
 .footer {
   padding: 60px 0;
   background: var(--primary-back-color);
-  // width: 100%;
+  min-width: 480px;
 }
 
 .logo-footer {
@@ -75,9 +75,7 @@
 }
 
 // .footer-container {
-//   display: flex;
-//   align-items: baseline;
-//   justify-content: space-between;
+//   min-width: 480px;
 // }
 
 .address {

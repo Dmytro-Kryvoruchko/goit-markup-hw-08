@@ -21,6 +21,12 @@
   fill: currentColor;
 }
 
+@media screen and (max-width: 479px) {
+  .customers {
+    min-width: 470px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .customers-list {
     display: flex;
