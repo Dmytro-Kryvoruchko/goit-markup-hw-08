@@ -500,7 +500,7 @@ button {
   }
   .modal-close-btn {
     position: absolute;
-    top: 15px;
+    top: 25px;
     right: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -550,7 +550,7 @@ button {
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.17;
     letter-spacing: inherit;
     color: var(--paragraph-text-color);
@@ -620,7 +620,7 @@ button {
     height: auto;
   }
   .modal-form-check-desc {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
   }
 }
