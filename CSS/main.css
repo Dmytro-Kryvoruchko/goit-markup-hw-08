@@ -153,6 +153,67 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 528px;
+  border-radius: 4px;
+  background-color: var(--primary-white-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  -webkit-transform: scale(1) translate(-50%, -50%);
+          transform: scale(1) translate(-50%, -50%);
+  -webkit-transition: opacity var(--transition), visibility var(--transition), -webkit-transform var(--transition);
+  transition: opacity var(--transition), visibility var(--transition), -webkit-transform var(--transition);
+  transition: transform var(--transition), opacity var(--transition), visibility var(--transition);
+  transition: transform var(--transition), opacity var(--transition), visibility var(--transition), -webkit-transform var(--transition);
+}
+.backdrop.is-hidden .modal-form {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.5) translate(-50%, -50%);
+          transform: scale(1.5) translate(-50%, -50%);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid var(--main-fill-color);
+  border-radius: 50%;
+  -webkit-transition: border-color var(--transition);
+  transition: border-color var(--transition);
+}
+.modal-close-btn:hover, .modal-close-btn:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-close-btn-icon {
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
+}
+.modal-close-btn:hover .modal-close-btn-icon, .modal-close-btn:focus .modal-close-btn-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 528px;
   border-radius: 4px;
   background-color: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -385,10 +446,172 @@ button {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 300px) and (max-width: 479px) {
+  .modal-form {
+    width: 100%;
+    height: auto;
+  }
+  .modal-form-check-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.17;
+    letter-spacing: inherit;
+    color: var(--paragraph-text-color);
+  }
+  .modal-form-check-desc::before {
+    display: block;
+    content: "";
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/for-sprite/submit-window.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    -webkit-transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), -webkit-box-shadow var(--transition);
+    transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), -webkit-box-shadow var(--transition);
+    transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
+    transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition), -webkit-box-shadow var(--transition);
+  }
+  .modal-form-check:checked + .modal-form-check-desc::before {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-image: url(../images/for-sprite/check-birdie.svg);
+  }
+  .modal-form-check:focus + .modal-form-check-desc::before {
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  .modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid var(--main-fill-color);
+    border-radius: 50%;
+    -webkit-transition: border-color var(--transition);
+    transition: border-color var(--transition);
+  }
+  .modal-close-btn:hover, .modal-close-btn:focus {
+    border-color: var(--accent-color);
+  }
+  .modal-close-btn-icon {
+    -webkit-transition: fill var(--transition);
+    transition: fill var(--transition);
+  }
+  .modal-close-btn:hover .modal-close-btn-icon, .modal-close-btn:focus .modal-close-btn-icon {
+    fill: var(--accent-color);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-form {
     width: 450px;
     height: auto;
+  }
+  .modal-form-check-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: inherit;
+    color: var(--paragraph-text-color);
+  }
+  .modal-form-check-desc::before {
+    display: block;
+    content: "";
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/for-sprite/submit-window.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    -webkit-transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), -webkit-box-shadow var(--transition);
+    transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), -webkit-box-shadow var(--transition);
+    transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
+    transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition), -webkit-box-shadow var(--transition);
+  }
+  .modal-form-check:checked + .modal-form-check-desc::before {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-image: url(../images/for-sprite/check-birdie.svg);
+  }
+  .modal-form-check:focus + .modal-form-check-desc::before {
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  .modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid var(--main-fill-color);
+    border-radius: 50%;
+    -webkit-transition: border-color var(--transition);
+    transition: border-color var(--transition);
+  }
+  .modal-close-btn:hover, .modal-close-btn:focus {
+    border-color: var(--accent-color);
+  }
+  .modal-close-btn-icon {
+    -webkit-transition: fill var(--transition);
+    transition: fill var(--transition);
+  }
+  .modal-close-btn:hover .modal-close-btn-icon, .modal-close-btn:focus .modal-close-btn-icon {
+    fill: var(--accent-color);
   }
 }
 @media screen and (min-width: 1200px) {
