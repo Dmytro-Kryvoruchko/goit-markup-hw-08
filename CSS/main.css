@@ -864,7 +864,7 @@ button {
   .menu__link.current::after {
     content: "";
     display: block;
-    bottom: -1px;
+    bottom: -18px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
